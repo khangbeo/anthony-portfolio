@@ -55,7 +55,7 @@ export default function AboutMe() {
             <div className="flex flex-row flex-wrap justify-center text-center mt-8">
               {skills.map((skill, index) => (
                 <span className="m-4">
-                  <Image src={`/../public/svg/${skill}.svg`} key={index} width={70} height={70} />
+                  <Image src={`/${skill}.svg`} key={index} width={70} height={70} />
                 </span>
               ))}
             </div>
@@ -65,7 +65,7 @@ export default function AboutMe() {
             <div className="flex flex-row flex-wrap justify-center text-center mt-8">
               {learning.map((skill, index) => (
                 <span className="m-4">
-                  <Image src={`/../public/svg/${skill}.svg`} key={index} width={70} height={70} />
+                  <Image src={`/${skill}.svg`} key={index} width={70} height={70} />
                 </span>
               ))}
             </div>
