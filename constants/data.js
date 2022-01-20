@@ -32,6 +32,11 @@ const userData = {
       link: "https://pomodoro-timer-project-six.vercel.app/",
       imgUrl: "/pomodoro.PNG",
     },
+    {
+      title: "Portfolio",
+      link: "https://anthony-duong.netlify.app/",
+      imgUrl: "/portfolio.PNG",
+    },
   ],
   about: {
     title:
