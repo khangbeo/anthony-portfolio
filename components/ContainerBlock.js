@@ -42,6 +42,8 @@ export default function ContainerBlock({ children, ...customMeta }) {
         dark:bg-gray-900 
         bg-white 
         w-full
+        text-gray-900
+        dark:text-gray-50
         dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-900 dark:to-black">
         <Navbar />
         <div>{children}</div>

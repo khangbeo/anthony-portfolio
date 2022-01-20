@@ -122,27 +122,22 @@ export default function Navbar() {
       {/* mobile-navbar */}
       <div className="space-x-8 text-center md:hidden mt-4">
         <Link href="/about">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
+          <a className="text-base font-normal">
             About
           </a>
         </Link>
         <Link href="/projects">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
+          <a className="text-base font-normal">
             Projects
           </a>
         </Link>
         <Link href="/contact">
-          <a className="text-base font-normal text-gray-600 dark:text-gray-300">
+          <a className="text-base font-normal">
             Contact
           </a>
         </Link>
         <Link href={userData.resumeUrl}>
-          <a
-            className={`hover-underline-animation ${router.asPath === `${userData.resumeUrl}`
-              ? "text-gray-800 font-bold dark:text-gray-400"
-              : "text-gray-600 dark:text-gray-300 font-normal"
-              }`}
-          >
+        <a className="text-base font-normal">
             Resume
           </a>
         </Link>
