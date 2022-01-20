@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'fonts.css';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter var', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hover-underline-animation {
+  background: 
+      linear-gradient(currentColor 0 0) 
+      bottom /var(--d, 0) 2px 
+      no-repeat;
+  transition:0.5s;
+}
+.hover-underline-animation:hover {
+  --d: 100%;
+}
+
+.bg {
+  z-index: 7;
+  background-image: url('../public/bg.png'),
+    linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f9f6fb, #f5edf6, #f3e4ef, #f1ced7, #ecbab6, #ddab90, #bfa16d);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
