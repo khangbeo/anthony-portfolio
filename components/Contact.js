@@ -1,6 +1,66 @@
 import React from "react";
 import userData from "@constants/data";
 
+function Form() {
+  return (
+    <form 
+      name="contact-form"
+      method="POST"
+      action="contact/?success=true"
+      data-netlify="true"
+      className="form rounded-lg text-xl p-4 flex flex-col">
+      <input
+        type='hidden'
+        name='form-name'
+        value='contact-form'
+      />
+      <label
+        htmlFor="name"
+        className="mx-4"
+      >
+        {" "}
+        Name *
+      </label>
+      <input
+        type="text"
+        className="font-light bg-gray-400 dark:bg-gray-800 rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+        name="name"
+        required
+      />
+      <label
+        htmlFor="email"
+        className="mx-4 mt-4"
+      >
+        Email *
+      </label>
+      <input
+        type="text"
+        className="font-light bg-gray-400 dark:bg-gray-800 rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+        name="email"
+        required
+      />
+      <label
+        htmlFor="message"
+        className="mx-4 mt-4"
+      >
+        Message *
+      </label>
+      <textarea
+        rows="4"
+        type="text"
+        className="font-light bg-gray-400 dark:bg-gray-800 rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+        name="message"
+        required
+      ></textarea>
+      <button
+        type="submit"
+        className="bg-gray-900 hover:bg-gray-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 font-bold"
+      >
+        Submit
+      </button>
+    </form>
+  )
+}
 export default function Contact() {
   return (
     <section>
@@ -73,49 +133,7 @@ export default function Contact() {
 
           </div>
 
-          <form className="form rounded-lg text-xl p-4 flex flex-col">
-            <label
-              htmlFor="name"
-              className="mx-4"
-            >
-              {" "}
-              Your Name
-            </label>
-            <input
-              type="text"
-              className="font-light bg-gray-400 dark:bg-gray-800 rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-              name="name"
-            />
-            <label
-              htmlFor="email"
-              className="mx-4 mt-4"
-            >
-              Email
-            </label>
-            <input
-              type="text"
-              className="font-light bg-gray-400 dark:bg-gray-800 rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-              name="email"
-            />
-            <label
-              htmlFor="message"
-              className="mx-4 mt-4"
-            >
-              Message
-            </label>
-            <textarea
-              rows="4"
-              type="text"
-              className="font-light bg-gray-400 dark:bg-gray-800 rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-              name="message"
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-gray-900 hover:bg-gray-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 font-bold"
-            >
-              Send Message
-            </button>
-          </form>
+          <Form />
         </div>
       </div>
     </section>
