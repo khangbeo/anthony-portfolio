@@ -125,7 +125,7 @@ export default function Navbar() {
 
       </div>
       {/* mobile-navbar */}
-      <div className="space-x-6 text-center md:hidden mt-4">
+      <div className="space-x-6 sm:space-x-9 text-center md:hidden mt-4">
         <Link href="/about">
           <a className="text-base font-normal" rel="noopener noreferrer">
             About

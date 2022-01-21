@@ -16,7 +16,7 @@ module.exports = {
       '3xl': '4px 8px 10px rgba(0, 0, 0.2, 0.50)',
     },
     backgroundImage: {
-      img: `url('../public/bg.png'),
+      dark: `url('../public/bg.png'),
       linear-gradient(to bottom, #111827, #111827, #111827, #111827, #111827, #131624, #141421, #15121e, #140d17, #110910, #0b0407, #000000)`,
     },
     fontFamily: {

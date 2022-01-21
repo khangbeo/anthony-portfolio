@@ -42,7 +42,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
         bg
         text-gray-900
         dark:text-gray-50 
-        dark:bg-img
+        dark:bg-dark
         bg-fixed
         bg-cover
         bg-no-repeat
