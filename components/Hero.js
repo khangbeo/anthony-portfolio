@@ -1,6 +1,7 @@
 import React from "react";
 import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
+import Link from "next/dist/client/link";
 
 export default function Hero() {
   const colors = ["#F59E0B", "#84CC16", "#10B981", "#3B82F6", "#bfa16d"];
@@ -19,6 +20,9 @@ export default function Hero() {
             </RainbowHighlight>
           </RoughNotationGroup>
         </div>
+        <Link href='/projects'>
+          <a className="text-xl font-normal ring ring-[tan] hover:ring-[#7e5e35] rounded p-3">Check out my projects</a>
+        </Link>
       </div>
     </div>
   );

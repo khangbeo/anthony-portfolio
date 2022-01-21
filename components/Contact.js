@@ -14,7 +14,7 @@ export default function Contact() {
           <div className="md:ml-4 md:block hidden">
             <header>
               <h1 className="font-semibold text-2xl">
-                Get in touch, let's talk.
+                Let's chat.
               </h1>
               <p className="font-light text-base mt-2">
                 Shoot me a message and I'll get back to you as soon as I can.
@@ -73,7 +73,7 @@ export default function Contact() {
 
           </div>
 
-          <form className="form rounded-lg text-xl p-4 flex flex-col" action="khangbeo2012@gmail.com">
+          <form className="form rounded-lg text-xl p-4 flex flex-col">
             <label
               htmlFor="name"
               className="mx-4"

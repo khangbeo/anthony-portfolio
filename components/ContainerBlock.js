@@ -9,7 +9,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
 
   const meta = {
     title: "Anthony Duong - Full-Stack Developer",
-    description: `I've been learning about full-stack development for 1 year. Get in touch with me to know more.`,
+    description: `Full-stack developer with a background in art and design.`,
     image: "/avatar.png",
     type: "website",
     ...customMeta,
@@ -22,11 +22,11 @@ export default function ContainerBlock({ children, ...customMeta }) {
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`https://yourwebsite.com${router.asPath}`}
+          content={`https://anthony-duong.netlify.app${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://yourwebsite.com${router.asPath}`}
+          href={`https://anthony-duong.netlify.app${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Anthony Duong" />
@@ -46,7 +46,9 @@ export default function ContainerBlock({ children, ...customMeta }) {
         dark:text-gray-50
         dark:bg-gradient-to-b dark:from-gray-900 dark:via-gray-900 dark:to-black">
         <Navbar />
+
         <div>{children}</div>
+
         <Footer />
       </main>
     </div>

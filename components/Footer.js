@@ -9,6 +9,8 @@ export default function Footer() {
           <div className="social-icons flex flex-row space-x-8">
             <a
               href={userData.socialLinks.github}
+              target="_blank"
+              rel="noopener noreferrer"
               className="h-10 w-10 rounded-full hover:bg-gray-900 hover:text-gray-50 text-gray-900 dark:text-gray-50 dark:hover:bg-gray-50 dark:hover:text-gray-900 flex items-center justify-center cursor-pointer"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -17,6 +19,8 @@ export default function Footer() {
             </a>
             <a
               href={userData.socialLinks.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
               className="h-10 w-10 rounded-full hover:bg-gray-900 hover:text-gray-50 text-gray-900 dark:text-gray-50 dark:hover:bg-gray-50 dark:hover:text-gray-900 flex items-center justify-center cursor-pointer"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -25,6 +29,7 @@ export default function Footer() {
             </a>
             <a
               href={`mailto:${userData.email}`}
+              rel="noopener noreferrer"
               className="h-10 w-10 rounded-full hover:bg-gray-900 hover:text-gray-50 text-gray-900 dark:text-gray-50 dark:hover:bg-gray-50 dark:hover:text-gray-900 flex items-center justify-center cursor-pointer"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">

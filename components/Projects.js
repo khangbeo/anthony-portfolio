@@ -15,6 +15,7 @@ export default function Projects() {
           <ProjectCard
             title={proj.title}
             link={proj.link}
+            github={proj.github}
             imgUrl={proj.imgUrl}
             number={`${idx + 1}`}
           />
@@ -24,24 +25,31 @@ export default function Projects() {
   );
 }
 
-const ProjectCard = ({ title, link, imgUrl, number }) => {
+const ProjectCard = ({ title, link, github, imgUrl, number }) => {
   return (
-    <a href={link} className="w-full block shadow-2xl">
-      <div className="relative overflow-hidden rounded-2xl">
-        <div className="h-72 object-cover">
-          <img
-            src={imgUrl}
-            alt="portfolio"
-            className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
-          />
+    <>
+      <a href={link} target={title === 'Portfolio' ? '_self' : "_blank"} rel="noopener noreferrer" className="w-full block drop-shadow-3xl">
+        <div className="relative overflow-hidden rounded-2xl">
+          <div className="h-72 object-cover">
+            <img
+              src={imgUrl}
+              alt="portfolio"
+              className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
+            />
+          </div>
+          <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-gray-900 rounded-md px-2">
+            {title}
+          </h1>
+          <h2 className="absolute top-20 left-10 text-gray-50 font-bold text-xl bg-gray-900 hover:bg-gray-500 rounded-md px-2">
+            <a href={github} target='_blank' rel="noopener noreferrer">GitHub</a>
+          </h2>
+          <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl bg-gray-900 rounded-md px-2">
+            {number.length === 1 ? "0" + number : number}
+          </h1>
         </div>
-        <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-gray-900 rounded-md px-2">
-          {title}
-        </h1>
-        <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl bg-gray-900 rounded-md px-2">
-          {number.length === 1 ? "0" + number : number}
-        </h1>
-      </div>
-    </a>
+      </a >
+
+    </>
+
   );
 };

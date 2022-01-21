@@ -40,10 +40,10 @@ a {
 }
 
 hr {
-  border-top: 5px dotted #020a0a;
+  border-top: 5px dotted currentColor;
   border-bottom: none;
-  width: 50%;
-  margin: 50px auto 50px auto;
+  width: 5%;
+  margin: 5px auto 5px auto;
 }
 
 .svg-skills > svg {

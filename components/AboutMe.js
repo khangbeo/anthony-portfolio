@@ -29,13 +29,15 @@ export default function AboutMe() {
             <p>
               {userData.about.title}.
             </p><br />
-            <p>Currently working on{' '}<a
-              className="bg-[tan] hover:bg-gray-600 rounded-md px-2 py-1 text-gray-900 hover:text-gray-50"
+            <p>Currently working on</p><br />
+            <a
+              target='_blank'
+              rel="noopener noreferrer"
+              className="bg-[tan] hover:bg-gray-600 rounded-md p-1 text-gray-900 hover:text-gray-50"
               href={userData.about.currentProjectUrl}
             >
               {userData.about.currentProject}
-            </a></p>
-
+            </a>
           </div>
 
         </div>

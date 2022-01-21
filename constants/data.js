@@ -10,31 +10,37 @@ const userData = {
     {
       title: "Periodic Tables",
       link: "https://ad-reservation-system.netlify.app/",
+      github: 'https://github.com/khangbeo/restaurant-client',
       imgUrl: "/pdtables.PNG",
     },
     {
       title: "WeLoveMovies",
       link: "https://welovemovies.netlify.app/",
+      github: 'https://github.com/khangbeo/WeLoveMovies-server',
       imgUrl: "/welovemovies.PNG",
     },
     {
       title: "Flashcard-o-Matic",
       link: "https://flashcard-o-matic.netlify.app/",
+      github: 'https://github.com/khangbeo/Flashcard-o-Matic',
       imgUrl: "/flashcard.PNG",
     },
     {
       title: "Local Library",
       link: "https://local-library.netlify.app/",
+      github: 'https://github.com/khangbeo/Local_Library',
       imgUrl: "/locallibrary.PNG",
     },
     {
       title: "Pomodoro Timer",
       link: "https://pomodoro-timer-project-six.vercel.app/",
+      github: 'https://github.com/khangbeo/Pomodoro_Timer',
       imgUrl: "/pomodoro.PNG",
     },
     {
       title: "Portfolio",
       link: "https://anthony-duong.netlify.app/",
+      github: 'https://github.com/khangbeo/anthony-portfolio',
       imgUrl: "/portfolio.PNG",
     },
   ],
