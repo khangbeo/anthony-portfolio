@@ -54,6 +54,10 @@ hr {
   margin: 5px auto 5px auto;
 }
 
+.text-shadow {
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+
 .svg-skills > svg {
   margin: 0;
   width: 100%;

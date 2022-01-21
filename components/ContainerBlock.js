@@ -43,6 +43,9 @@ export default function ContainerBlock({ children, ...customMeta }) {
         text-gray-900
         dark:text-gray-50 
         dark:bg-img
+        bg-fixed
+        bg-cover
+        bg-no-repeat
         ">
         <Navbar />
         <div>{children}</div>

@@ -22,7 +22,7 @@ export default function Navbar() {
 
         <div className="flex items-center">
           <Link href="/">
-            <a className="m-4 " rel="noopener noreferrer">
+            <a className="m-4" rel="noopener noreferrer">
               <Image
                 src={userData.avatarUrl}
                 alt='logo'
@@ -31,7 +31,7 @@ export default function Navbar() {
               />
             </a>
           </Link>
-          <div>
+          <div className="text-shadow">
             <h1 className="font-semibold text-xl dark:text-gray-100">
               {userData.name}
             </h1>

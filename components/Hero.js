@@ -9,19 +9,19 @@ export default function Hero() {
     <div className="flex flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
 
-      <div className="w-2/3  mx-auto text-4xl md:text-7xl font-bold text-center py-12 lg:p-10">
+      <div className="w-2/3 mx-auto text-4xl md:text-7xl font-bold text-center py-12 lg:p-10">
         Hi, I'm Anthony.
         <div className="">
           <RoughNotationGroup show={true}>
             <RainbowHighlight color={colors[4]} >
-              <h1 className="text-white dark:text-gray-900 my-4 py-3">
+              <h1 className="text-white dark:text-gray-900 py-3 my-10">
                 Full-Stack Developer.
               </h1>
             </RainbowHighlight>
           </RoughNotationGroup>
         </div>
         <Link href='/projects'>
-          <a className="text-xl font-normal ring ring-[tan] hover:ring-[#7e5e35] rounded p-3">Check out my projects</a>
+          <a className="text-xl font-normal ring ring-[#614828] hover:ring-[#be9259] rounded p-3">Check out my projects</a>
         </Link>
       </div>
     </div>

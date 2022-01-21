@@ -65,8 +65,8 @@ export default function AboutMe() {
             </h2>
             <div className="flex flex-row flex-wrap justify-center text-center mt-8">
               {skills.map((skill, index) => (
-                <span className="m-4 ">
-                  <FontAwesomeIcon icon={skill} key={index} size='4x' />
+                <span key={index} className="m-4 ">
+                  <FontAwesomeIcon icon={skill} size='4x' />
                 </span>
               ))}
             </div>

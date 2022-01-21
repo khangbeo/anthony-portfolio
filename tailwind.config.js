@@ -21,7 +21,7 @@ module.exports = {
     },
     fontFamily: {
       'title': ['Montserrat', 'sans-serif'],
-    }
+    },
   },
   variants: {
     extend: {},
