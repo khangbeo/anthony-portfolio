@@ -65,13 +65,13 @@ function Form() {
 export default function Contact() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto h-20 ">
+      <div className="max-w-6xl mx-auto h-20">
         <h1 className="font-title text-5xl md:text-7xl font-bold py-8 text-center">
           Contact
         </h1>
 
-      </div><hr />
-      <div className="relative z-10 p-8 lg:p-8 max-w-6xl mx-auto">
+      </div>
+      <div className="relative z-10 p-8 lg:p-8 max-w-6xl mx-auto mt-5">
         <header className="text-center">
           <h1 className="font-semibold text-2xl">
             Let's chat.

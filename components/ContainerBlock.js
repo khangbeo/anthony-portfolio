@@ -46,6 +46,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
         bg-fixed
         bg-cover
         bg-no-repeat
+        min-h-screen
         ">
         <Navbar />
         <div>{children}</div>

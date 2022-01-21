@@ -16,7 +16,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10">
+    <div className="max-w-7xl mx-auto px-4 pt-4 pb-10">
       <div className="flex md:flex-row justify-center md:justify-between items-center">
         {/* Logo / Home / Text */}
 
@@ -26,8 +26,8 @@ export default function Navbar() {
               <Image
                 src={userData.avatarUrl}
                 alt='logo'
-                width={100}
-                height={100}
+                width={80}
+                height={80}
               />
             </a>
           </Link>
@@ -125,7 +125,7 @@ export default function Navbar() {
 
       </div>
       {/* mobile-navbar */}
-      <div className="space-x-8 text-center md:hidden mt-4">
+      <div className="space-x-6 text-center md:hidden mt-4">
         <Link href="/about">
           <a className="text-base font-normal" rel="noopener noreferrer">
             About
