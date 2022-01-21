@@ -18,6 +18,7 @@ export default function Projects() {
             github={proj.github}
             imgUrl={proj.imgUrl}
             number={`${idx + 1}`}
+            key={idx}
           />
         ))}
       </div>

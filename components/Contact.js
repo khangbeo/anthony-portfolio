@@ -61,6 +61,7 @@ function Form() {
     </form>
   )
 }
+
 export default function Contact() {
   return (
     <section>

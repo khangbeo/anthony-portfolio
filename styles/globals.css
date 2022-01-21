@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @import 'fonts.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 html,
 body {
   padding: 0;
@@ -32,11 +32,19 @@ a {
 }
 
 .bg {
-  z-index: 7;
   background-image: url('../public/bg.png'),
     linear-gradient(to bottom, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f9f6fb, #f5edf6, #f3e4ef, #f1ced7, #ecbab6, #ddab90, #bfa16d);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-img {
+  background-image: url('../public/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  mix-blend-mode: multiply;
 }
 
 hr {
