@@ -1,4 +1,3 @@
-import React from "react";
 import { RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
 import Link from "next/dist/client/link";
@@ -9,7 +8,7 @@ export default function Hero() {
     <div className="flex flex-row justify-center items-start overflow-hidden">
       {/* Text container */}
 
-      <div className="w-2/3 mx-auto text-4xl md:text-7xl font-bold text-center py-12 lg:p-10">
+      <div className="font-title w-2/3 mx-auto text-4xl md:text-7xl font-bold text-center py-12 lg:p-10">
         Hi, I'm Anthony.
         <div className="">
           <RoughNotationGroup show={true}>

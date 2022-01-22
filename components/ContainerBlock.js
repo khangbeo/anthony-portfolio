@@ -1,4 +1,3 @@
-import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Navbar from "./Navbar";
@@ -39,14 +38,15 @@ export default function ContainerBlock({ children, ...customMeta }) {
       </Head>
       <main className="
         w-full
-        bg
         text-gray-900
         dark:text-gray-50 
+        bg-light
         dark:bg-dark
         bg-fixed
+        bg-center
         bg-cover
         bg-no-repeat
-        min-h-screen
+        h-auto
         ">
         <Navbar />
         <div>{children}</div>

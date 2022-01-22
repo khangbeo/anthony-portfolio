@@ -46,7 +46,7 @@ const userData = {
   ],
   about: {
     title:
-      "I'm a full-stack developer with a background in art and design",
+      "Full-stack developer with a background in art and design",
     description: [
       `As an artist, I love learning about new artmaking methods and planning out dreamlike paintings. As a developer, I love solving problems and learning new technologies.`,
       `I've been learning about web development for about 1 year since the start of January 2021. I was interested in learning how to build a website for myself to showcase my artworks, but I ended up loving the process because it was so similar to artmaking. I felt naturally at-home in this new environment where I could put my art and design skills to good use.`,

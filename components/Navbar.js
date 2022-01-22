@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
@@ -91,7 +91,7 @@ export default function Navbar() {
             <button
               aria-label="Toggle Dark Mode"
               type="button"
-              className="w-10 h-10 p-3 rounded focus:outline-none"
+              className="w-15 h-15 p-3 rounded focus:outline-none"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               {mounted && (

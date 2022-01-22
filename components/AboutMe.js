@@ -1,6 +1,4 @@
-import React from "react";
 import userData from "@constants/data";
-import Image from "next/image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faJsSquare,
@@ -38,17 +36,16 @@ export default function AboutMe() {
           {/* Text area */}
           <div>
             {userData.about.description?.map((desc, idx) => (
-              <>
+              <div key={idx}>
                 <p
-                  key={idx}
                   className="text-left text-xl leading-8"
                 >
                   {desc}
                 </p><br /><br /><br />
-              </>
+              </div>
 
             ))}
-            <div className="leading-loose text-2xl md:text-4xl mx-4">
+            <div className="text-3xl md:text-4xl mx-4">
               <p className="font-bold">Currently working on</p><br />
               <a
                 target='_blank'
@@ -60,7 +57,7 @@ export default function AboutMe() {
               </a>
             </div>
             <br /><br /><br />
-            <h2 className="text-4xl text-center px-2 py-2 mt-6 inline-block font-bold">
+            <h2 className="text-3xl md:text-4xl text-center px-2 py-2 mt-6 inline-block font-bold">
               Comfortable With
             </h2>
             <div className="flex flex-row flex-wrap justify-center text-center mt-8">
