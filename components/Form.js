@@ -35,7 +35,7 @@ export default function Form() {
             ></textarea>
             <button
                 type="submit"
-                className="bg-gray-900 hover:bg-gray-500 rounded-md md:w-1/2 mx-4 mt-8 py-2 text-gray-50 font-bold"
+                className="bg-gray-900 dark:bg-gray-700 hover:bg-gray-500 dark:hover:bg-gray-500 rounded-md md:w-1/2 mx-4 mt-8 py-2 text-gray-50 font-bold"
             >
                 Send Message
             </button>
