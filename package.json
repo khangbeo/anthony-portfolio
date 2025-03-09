@@ -13,7 +13,6 @@
         "@fortawesome/free-solid-svg-icons": "^5.15.4",
         "@fortawesome/react-fontawesome": "^0.1.16",
         "@svgr/webpack": "^6.2.0",
-        "@opennextjs/netlify": " ^v5.9",
         "axios": "^0.21.1",
         "next": "^15.2.1",
         "next-themes": "0.0.15",
