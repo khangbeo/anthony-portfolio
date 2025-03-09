@@ -21,15 +21,15 @@ export default function Navbar() {
         {/* Logo / Home / Text */}
 
         <div className="flex items-center">
-          <Link href="/">
-            <a className="m-4" rel="noopener noreferrer">
-              <Image
-                src={userData.avatarUrl}
-                alt='logo'
-                width={80}
-                height={80}
-              />
-            </a>
+          <Link href="/" className="m-4" rel="noopener noreferrer">
+
+            <Image
+              src={userData.avatarUrl}
+              alt='logo'
+              width={80}
+              height={80}
+            />
+
           </Link>
           <div className="text-shadow">
             <h1 className="font-semibold text-xl dark:text-gray-100">
@@ -42,51 +42,51 @@ export default function Navbar() {
         </div>
         <div>
           <div className="space-x-8 hidden md:block text-xl">
-            <Link href="/about">
-              <a
-                rel="noopener noreferrer"
-                className={`hover-underline-animation ${router.asPath === "/about"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal"
-                  }`}
-              >
+            <Link
+              href="/about"
+              rel="noopener noreferrer"
+              className={`hover-underline-animation ${router.asPath === "/about"
+                ? "text-gray-800 font-bold dark:text-gray-400"
+                : "text-gray-600 dark:text-gray-300 font-normal"
+                }`}>
+              
                 About
-              </a>
+              
             </Link>
-            <Link href="/projects">
-              <a
-                rel="noopener noreferrer"
-                className={`hover-underline-animation ${router.asPath === "/projects"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal"
-                  }`}
-              >
+            <Link
+              href="/projects"
+              rel="noopener noreferrer"
+              className={`hover-underline-animation ${router.asPath === "/projects"
+                ? "text-gray-800 font-bold dark:text-gray-400"
+                : "text-gray-600 dark:text-gray-300 font-normal"
+                }`}>
+              
                 Projects
 
-              </a>
+              
             </Link>
-            <Link href="/contact">
-              <a
-                rel="noopener noreferrer"
-                className={`hover-underline-animation ${router.asPath === "/contact"
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal"
-                  }`}
-              >
+            <Link
+              href="/contact"
+              rel="noopener noreferrer"
+              className={`hover-underline-animation ${router.asPath === "/contact"
+                ? "text-gray-800 font-bold dark:text-gray-400"
+                : "text-gray-600 dark:text-gray-300 font-normal"
+                }`}>
+              
                 Contact
-              </a>
+              
             </Link>
-            <Link href={userData.resumeUrl}>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`hover-underline-animation ${router.asPath === `${userData.resumeUrl}`
-                  ? "text-gray-800 font-bold dark:text-gray-400"
-                  : "text-gray-600 dark:text-gray-300 font-normal"
-                  }`}
-              >
+            <Link
+              href={userData.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`hover-underline-animation ${router.asPath === `${userData.resumeUrl}`
+                ? "text-gray-800 font-bold dark:text-gray-400"
+                : "text-gray-600 dark:text-gray-300 font-normal"
+                }`}>
+              
                 Resume
-              </a>
+              
             </Link>
             <button
               aria-label="Toggle Dark Mode"
@@ -126,25 +126,35 @@ export default function Navbar() {
       </div>
       {/* mobile-navbar */}
       <div className="space-x-6 sm:space-x-9 text-center md:hidden mt-4">
-        <Link href="/about">
-          <a className="text-base font-normal" rel="noopener noreferrer">
+        <Link href="/about" className="text-base font-normal" rel="noopener noreferrer">
+          
             About
-          </a>
+          
         </Link>
-        <Link href="/projects">
-          <a className="text-base font-normal" rel="noopener noreferrer">
+        <Link
+          href="/projects"
+          className="text-base font-normal"
+          rel="noopener noreferrer">
+          
             Projects
-          </a>
+          
         </Link>
-        <Link href="/contact">
-          <a className="text-base font-normal" rel="noopener noreferrer">
+        <Link
+          href="/contact"
+          className="text-base font-normal"
+          rel="noopener noreferrer">
+          
             Contact
-          </a>
+          
         </Link>
-        <Link href={userData.resumeUrl}>
-          <a className="text-base font-normal" target="_blank" rel="noopener noreferrer">
+        <Link
+          href={userData.resumeUrl}
+          className="text-base font-normal"
+          target="_blank"
+          rel="noopener noreferrer">
+          
             Resume
-          </a>
+          
         </Link>
         <button
           aria-label="Toggle Dark Mode"
