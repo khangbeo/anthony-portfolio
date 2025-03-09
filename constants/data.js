@@ -1,7 +1,7 @@
 const userData = {
     githubUsername: "khangbeo",
     name: "Anthony Duong",
-    designation: "Full-Stack Developer",
+    designation: "Support Engineer",
     avatarUrl: "/logomin.PNG",
     email: "khangbeo2012@gmail.com",
     phone: "+1 (714) 326-4495",
@@ -58,7 +58,7 @@ const userData = {
         },
     ],
     about: {
-        title: "Full-stack developer with a background in art and design",
+        title: "Support Engineer with a background in art and design",
         description: [
             `I’ve always been drawn to the creative process, whether it’s through painting dreamlike landscapes or crafting intuitive user experiences in software. My journey into web development started as a passion project: I wanted to build a website to showcase my artwork. But as I dived deeper into HTML, CSS, and JavaScript, I realized that coding felt just like painting, each element carefully placed, each function a brushstroke bringing a vision to life.`,
             `The more I learned, the more I wanted to push my limits. After six months of self-study, I sought a more structured approach and enrolled in Thinkful’s Software Engineering program, where I thrived under its rigorous curriculum. I mastered React, Bootstrap, Node.js, Express, and PostgreSQL, all while developing a problem-solving mindset that carried over to my technical support roles.`,

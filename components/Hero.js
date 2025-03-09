@@ -14,7 +14,7 @@ export default function Hero() {
                     <RoughNotationGroup show={true}>
                         <RainbowHighlight color={colors[4]}>
                             <h1 className="text-white dark:text-gray-900 py-3 my-10">
-                                Full-Stack Developer.
+                                Support Engineer.
                             </h1>
                         </RainbowHighlight>
                     </RoughNotationGroup>
