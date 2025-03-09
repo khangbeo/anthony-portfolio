@@ -60,7 +60,7 @@ export default function Form() {
 
     return (
         <form
-            action="https://formsubmit.co/your-email@gmail.com"
+            action="https://formsubmit.co/khangbeo2012@gmail.com"
             method="POST"
             onSubmit={handleSubmit}
             className="form rounded-lg text-xl p-4 flex flex-col md:w-6/12 mx-auto mt-10"
