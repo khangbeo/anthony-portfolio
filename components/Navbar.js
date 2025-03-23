@@ -38,6 +38,7 @@ export default function Navbar() {
                         </p>
                     </div>
                 </div>
+                {/** main navbar */}
                 <div>
                     <div className="space-x-8 hidden md:block text-xl">
                         <Link

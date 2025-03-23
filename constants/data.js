@@ -9,9 +9,9 @@ const userData = {
     projects: [
         {
             title: "Pixel Art Editor",
-            link: "https://js-5x9dhn.stackblitz.io/",
-            github: "https://github.com/khangbeo/etch-a-sketch",
-            imgUrl: "/pixel-art.png",
+            link: "https://pixelarteditor.vercel.app/",
+            github: "https://github.com/khangbeo/pixel-art-editor",
+            imgUrl: "/pixel.png",
         },
         {
             title: "Calculator",

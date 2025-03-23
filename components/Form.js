@@ -65,7 +65,6 @@ export default function Form() {
             onSubmit={handleSubmit}
             className="form rounded-lg text-xl p-4 flex flex-col md:w-6/12 mx-auto mt-10"
         >
-            {/* Status Message (Above Form) */}
             {status && (
                 <p
                     className={`mb-4 p-3 text-center font-semibold rounded-lg ${
@@ -80,9 +79,8 @@ export default function Form() {
                 </p>
             )}
 
-            {/* Name Field */}
             <div className="relative mx-4 my-2">
-                <label for="name" className="text-white font-light ml-3">
+                <label htmlFor="name" className="text-white font-light">
                     Name
                 </label>
                 <input
@@ -91,7 +89,7 @@ export default function Form() {
                     placeholder="Your name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`placeholder-shown:text-white placeholder-shown:italic font-light text-white bg-gray-500 dark:bg-gray-800 rounded-md focus:outline-none py-2 px-5 w-full focus:ring-2 ring-blue-500 ${
+                    className={`placeholder-shown:text-white placeholder-shown:italic font-light text-white bg-gray-500 dark:bg-gray-800 rounded-md focus:outline-none mt-2 py-2 px-5 w-full focus:ring-2 ring-blue-500 ${
                         errors.name ? "border-red-500 border-2" : ""
                     }`}
                 />
@@ -102,9 +100,8 @@ export default function Form() {
                 )}
             </div>
 
-            {/* Email Field */}
             <div className="relative mx-4 my-2">
-                <label for="email" className="text-white font-light ml-3">
+                <label htmlFor="email" className="text-white font-light">
                     Email
                 </label>
                 <input
@@ -113,7 +110,7 @@ export default function Form() {
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`placeholder-shown:text-white placeholder-shown:italic font-light text-white bg-gray-500 dark:bg-gray-800 rounded-md focus:outline-none py-2 px-5 w-full focus:ring-2 ring-blue-500 ${
+                    className={`placeholder-shown:text-white placeholder-shown:italic font-light text-white bg-gray-500 dark:bg-gray-800 rounded-md focus:outline-none mt-2 py-2 px-5 w-full focus:ring-2 ring-blue-500 ${
                         errors.email ? "border-red-500 border-2" : ""
                     }`}
                 />
@@ -124,9 +121,8 @@ export default function Form() {
                 )}
             </div>
 
-            {/* Message Field */}
             <div className="relative mx-4 my-2">
-                <label for="message" className="text-white font-light ml-3">
+                <label htmlFor="message" className="text-white font-light3">
                     Message
                 </label>
                 <textarea
@@ -135,7 +131,7 @@ export default function Form() {
                     placeholder="Your message"
                     value={formData.message}
                     onChange={handleChange}
-                    className={`placeholder-shown:text-white placeholder-shown:italic font-light text-white bg-gray-500 dark:bg-gray-800 rounded-md focus:outline-none py-2 px-5 w-full focus:ring-2 ring-blue-500 ${
+                    className={`placeholder-shown:text-white placeholder-shown:italic font-light text-white bg-gray-500 dark:bg-gray-800 rounded-md focus:outline-none mt-2 py-2 px-5 w-full focus:ring-2 ring-blue-500 ${
                         errors.message ? "border-red-500 border-2" : ""
                     }`}
                 ></textarea>
@@ -146,7 +142,6 @@ export default function Form() {
                 )}
             </div>
 
-            {/* Submit Button */}
             <button
                 type="submit"
                 className="bg-gray-900 dark:bg-gray-700 hover:bg-gray-500 dark:hover:bg-gray-500 rounded-md md:w-1/2 mx-4 mt-8 py-2 text-gray-50 font-bold"

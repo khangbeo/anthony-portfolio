@@ -21,11 +21,11 @@ export default function ContainerBlock({ children, ...customMeta }) {
                 <meta content={meta.description} name="description" />
                 <meta
                     property="og:url"
-                    content={`https://anthony-duong.netlify.app${router.asPath}`}
+                    content={`https://anthonyduong.vercel.app${router.asPath}`}
                 />
                 <link
                     rel="canonical"
-                    href={`https://anthony-duong.netlify.app${router.asPath}`}
+                    href={`https://anthonyduong.vercel.app${router.asPath}`}
                 />
                 <meta property="og:type" content={meta.type} />
                 <meta property="og:site_name" content="Anthony Duong" />
