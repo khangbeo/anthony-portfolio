@@ -1,8 +1,9 @@
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import userData from "constants/data";
+
 export default function Socials() {
     return (
-        <div className="social-icons flex flex-row space-x-2">
+        <div className="social-icons flex space-x-2">
             <a
                 href={userData.socialLinks.github}
                 target="_blank"

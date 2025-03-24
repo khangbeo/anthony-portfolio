@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
     const router = useRouter();
@@ -19,7 +18,7 @@ export default function Navbar() {
                 <Link
                     key={item.name}
                     href={item.href}
-                    className={`p-2 rounded-md text-xl transition-colors ${
+                    className={`p-2 rounded-md lg:text-xl transition-colors ${
                         router.pathname === item.href
                             ? "bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900"
                             : "text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
@@ -28,8 +27,6 @@ export default function Navbar() {
                     {item.name}
                 </Link>
             ))}
-
-            <ThemeToggle />
         </nav>
     );
 }

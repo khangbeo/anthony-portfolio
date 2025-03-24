@@ -9,7 +9,7 @@ export default function BlogList({ posts, limit }) {
                       >
                           <a
                               href={`/blog/${post.slug}`}
-                              className="text-xl text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200"
+                              className="text-md lg:text-xl text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200"
                           >
                               {post.title}
                           </a>
@@ -25,7 +25,7 @@ export default function BlogList({ posts, limit }) {
                       >
                           <a
                               href={`/blog/${post.slug}`}
-                              className="text-xl text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200"
+                              className="text-md lg:text-xl text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200"
                           >
                               {post.title}
                           </a>

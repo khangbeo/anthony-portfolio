@@ -16,7 +16,7 @@ export default function ThemeToggle() {
     return (
         <button
             onClick={handleThemeChange}
-            className="p-2 rounded-md text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white"
+            className="p-2 rounded-md text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-white ml-auto"
         >
             {mounted &&
                 (theme === "dark" ? (

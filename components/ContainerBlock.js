@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Hero from "./Hero";
+import Header from "./Header";
 import Footer from "./Footer";
 
 export default function ContainerBlock({ children, customMeta }) {
@@ -60,7 +60,7 @@ export default function ContainerBlock({ children, customMeta }) {
                 <link rel="canonical" href="https://anthonyduong.vercel.com" />
             </Head>
             <div className="min-h-screen flex flex-col">
-                <Hero />
+                <Header />
                 <main className="flex-grow container mx-auto px-4 py-8">
                     {children}
                 </main>
