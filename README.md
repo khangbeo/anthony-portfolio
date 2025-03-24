@@ -23,19 +23,23 @@ This project showcases my work, skills, and experiences in a dynamic and interac
 ## Projects Redesign
 
 -   Portfolio - Here
--   [Pixel Art Editor](https://github.com/khangbeo/etch-a-sketch)
--   [Calculator](https://github.com/khangbeo/odin-calculator)
 -   [URL Shortener](https://github.com/khangbeo/url-shortener)
 -   [Odin Library](https://github.com/khangbeo/odin-library)
 -   [Youtube Downloader](https://github.com/khangbeo/youtube-downloader)
--   [Veddit - Image Gallery](https://github.com/khangbeo/next-image-gallery)
 -   [Todo List](https://github.com/khangbeo/actual-good-todo-list)
 -   [MyAnimeList Clone](https://github.com/khangbeo/react-anime-database)
 -   [Weather App](https://github.com/khangbeo/react-weather-app)
+
+## Finished for now
+
+-   [Pixel Art Editor](https://github.com/khangbeo/etch-a-sketch)
+-   [Calculator](https://github.com/khangbeo/odin-calculator)
+-   [Veddit - Image Gallery](https://github.com/khangbeo/next-image-gallery)
 -   [React Pokedex](https://github.com/khangbeo/react-pokedex)
+    -   fix the back button, it's not returning to the previous page, it's going directly to the home page and restarts the pagination
 -   [Flashcard](https://github.com/khangbeo/Flashcard-o-Matic)
--   [Flashcard API](https://github.com/khangbeo/Flashcard-json-server)
--   [Pomodoro Timer](https://github.com/khangbeo/Pomodoro_Timer) - maybe incorporate this into the final todo list project
+-   [Pomodoro Timer](https://github.com/khangbeo/Pomodoro_Timer)
+    -   add more features
 
 ## 📬 Contact
 

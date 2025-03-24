@@ -38,26 +38,6 @@ export default function Form() {
         }
     };
 
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     setStatus("Sending...");
-    //     const res = await fetch("/api/contact", {
-    //         method: "POST",
-    //         headers: { "Content-Type": "application/json" },
-    //         body: JSON.stringify(formData),
-    //     });
-
-    //     const result = await res.json();
-    //     if (res.ok) {
-    //         setStatus("Message sent successfully!");
-    //         setFormData({ name: "", email: "", message: "" });
-    //     } else {
-    //         setStatus(
-    //             result.error || "Failed to send message. Please try again."
-    //         );
-    //     }
-    // };
-
     return (
         <form
             action="https://formsubmit.co/khangbeo2012@gmail.com"

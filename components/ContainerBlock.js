@@ -1,49 +1,71 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
-import Navbar from "./Navbar";
+import Hero from "./Hero";
 import Footer from "./Footer";
 
-export default function ContainerBlock({ children, ...customMeta }) {
-    const router = useRouter();
-
+export default function ContainerBlock({ children, customMeta }) {
     const meta = {
-        title: "Anthony Duong - Full-Stack Developer",
-        description: `Full-stack developer with a background in art and design.`,
-        image: "/avatar.png",
+        title: "Anthony Duong - Support Engineer",
+        description:
+            "Support Engineer with a background in art and design, passionate about AI training and creative problem-solving.",
+        image: "/avatar.jpg",
         type: "website",
         ...customMeta,
     };
     return (
-        <div>
+        <>
             <Head>
-                <title>{meta.title}</title>
-                <meta name="robots" content="follow, index" />
-                <meta content={meta.description} name="description" />
+                <title>
+                    {meta?.title || "Anthony Duong - Support Engineer"}
+                </title>
                 <meta
-                    property="og:url"
-                    content={`https://anthonyduong.vercel.app${router.asPath}`}
+                    name="description"
+                    content={
+                        meta?.description ||
+                        "Support Engineer specializing in web development and technical support."
+                    }
                 />
-                <link
-                    rel="canonical"
-                    href={`https://anthonyduong.vercel.app${router.asPath}`}
+                <meta
+                    property="og:title"
+                    content={meta?.title || "Anthony Duong - Support Engineer"}
                 />
-                <meta property="og:type" content={meta.type} />
+                <meta
+                    property="og:description"
+                    content={
+                        meta?.description ||
+                        "Support Engineer specializing in web development and technical support."
+                    }
+                />
+                <meta
+                    property="og:image"
+                    content={meta?.image || "/images/anthony.jpg"}
+                />
+                <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="Anthony Duong" />
-                <meta property="og:description" content={meta.description} />
-                <meta property="og:title" content={meta.title} />
-                <meta property="og:image" content={meta.image} />
-                {meta.date && (
-                    <meta
-                        property="article:published_time"
-                        content={meta.date}
-                    />
-                )}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta
+                    name="twitter:title"
+                    content={meta?.title || "Anthony Duong - Support Engineer"}
+                />
+                <meta
+                    name="twitter:description"
+                    content={
+                        meta?.description ||
+                        "Support Engineer specializing in web development and technical support."
+                    }
+                />
+                <meta
+                    name="twitter:image"
+                    content={meta?.image || "/images/anthony.jpg"}
+                />
+                <link rel="canonical" href="https://anthonyduong.vercel.com" />
             </Head>
-            <main className="w-full text-gray-900 dark:text-gray-50 bg-light dark:bg-dark h-auto">
-                <Navbar />
-                <div>{children}</div>
+            <div className="min-h-screen flex flex-col">
+                <Hero />
+                <main className="flex-grow container mx-auto px-4 py-8">
+                    {children}
+                </main>
                 <Footer />
-            </main>
-        </div>
+            </div>
+        </>
     );
 }
