@@ -1,7 +1,7 @@
-import ContainerBlock from "../components/ContainerBlock";
+import ContainerBlock from "../components/layout/ContainerBlock";
 import userData from "@constants/data";
-import Card from "@components/Card";
-import BlogList from "@components/BlogList";
+import Card from "@components/ui/Card";
+import BlogList from "@components/common/BlogList";
 import posts from "@constants/blogs";
 
 export default function Home() {

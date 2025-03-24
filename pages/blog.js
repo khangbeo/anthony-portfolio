@@ -1,5 +1,5 @@
-import ContainerBlock from "../components/ContainerBlock";
-import Blog from "../components/Blog";
+import ContainerBlock from "../components/layout/ContainerBlock";
+import Blog from "../components/sections/Blog";
 
 export default function blog() {
     return (

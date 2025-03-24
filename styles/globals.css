@@ -150,6 +150,31 @@
     .text-shadow {
         text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     }
+
+    .nav-link {
+        position: relative;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: currentColor;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    /* For active state */
+    .nav-link.active::after {
+        width: 100%;
+    }
 }
 
 @layer utilities {

@@ -1,4 +1,4 @@
-import BlogList from "./BlogList";
+import BlogList from "../common/BlogList";
 import posts from "@constants/blogs";
 
 export default function Blog() {

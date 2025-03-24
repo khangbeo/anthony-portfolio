@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
-import Socials from "./Socials";
-import ThemeToggle from "./ThemeToggle";
+import Socials from "../common/Socials";
+import ThemeToggle from "../ui/ThemeToggle";
 export default function Header() {
     return (
         <div className="w-full backdrop-blur-sm">
