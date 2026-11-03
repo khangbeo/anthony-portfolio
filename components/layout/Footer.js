@@ -11,8 +11,8 @@ export default function Footer() {
                 <Socials />
                 <div className="m-8 text-center">
                     <p>
-                        {new Date().getFullYear()} &copy; Anthony Duong. All
-                        Rights Reserved.
+                        &copy; {new Date().getFullYear()} Anthony Duong.
+                        Bakersfield, California.
                     </p>
                 </div>
             </div>
