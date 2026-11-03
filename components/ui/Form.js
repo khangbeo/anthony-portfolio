@@ -55,7 +55,7 @@ export default function Form() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 outline-none"
+                    className="w-full px-4 py-3 bg-white dark:bg-[#18181b] border border-gray-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 outline-none"
                     placeholder="John Doe"
                 />
             </div>
@@ -72,7 +72,7 @@ export default function Form() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 outline-none"
+                    className="w-full px-4 py-3 bg-white dark:bg-[#18181b] border border-gray-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 outline-none"
                     placeholder="john@example.com"
                 />
             </div>
@@ -89,7 +89,7 @@ export default function Form() {
                     name="message"
                     required
                     rows="5"
-                    className="w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 outline-none resize-none"
+                    className="w-full px-4 py-3 bg-white dark:bg-[#18181b] border border-gray-200 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200 outline-none resize-none"
                     placeholder="Your message here..."
                 ></textarea>
             </div>
