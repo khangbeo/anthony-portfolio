@@ -1,35 +1,40 @@
 const userData = {
     githubUsername: "khangbeo",
     name: "Anthony Duong",
-    designation: "Support Engineer",
+    designation: "Technical Support Engineer",
     avatarUrl: "/images/anthony.jpg",
     email: "khangbeo2012@gmail.com",
     phone: "+1 (714) 326-4495",
-    address: "Bakersfield, CA, United States.",
+    address: "Bakersfield, California, United States.",
+    hero: {
+        headline: "I solve the support cases other people get stuck on.",
+        description:
+            "5+ years of B2B SaaS support. At MX I support banks and credit unions on a financial data platform, specializing in authentication and OAuth issues, API failures, and missing or delayed data. I am also the person teammates come to for hard cases: subject matter expert, mentor, and documentation writer.",
+    },
     projects: [
         {
+            title: "Petal & Polish — Booking Site",
+            description:
+                "A sample booking site for a nail salon: service menu, appointment booking flow, and a clean small-business layout. Built as a portfolio piece for freelance web work.",
+            tags: ["HTML", "CSS", "JavaScript"],
+        },
+        {
             title: "Pixel Art Editor",
-            link: "https://pixelarteditor.vercel.app/",
+            link: "https://pixelarteditor.vercel.app",
             github: "https://github.com/khangbeo/pixel-art-editor",
             imgUrl: "/images/pixel.png",
             description:
-                "A web-based pixel art editor with simple features and save and load functionality built with JavaScript, HTML, and CSS.",
-        },
-        {
-            title: "Calculator",
-            link: "https://odin-calculator-flame.vercel.app/",
-            github: "https://github.com/khangbeo/odin-calculator",
-            imgUrl: "/images/calculator.png",
-            description:
-                "A simple calculator with basic features built with JavaScript, HTML, and CSS.",
+                "A web-based pixel art editor with drawing tools and save/load functionality, built with vanilla JavaScript, HTML, and CSS.",
+            tags: ["JavaScript", "HTML", "CSS"],
         },
         {
             title: "StudyCarrd",
-            link: "https://studycarrd.vercel.app/",
+            link: "https://studycarrd.vercel.app",
             github: "https://github.com/khangbeo/Flashcard-o-Matic",
             imgUrl: "/images/flashcard.png",
             description:
-                "Simple flashcards with a json-server backend and React frontend. Create and manage your own flashcards and study them.",
+                "A flashcard study app with a React frontend and a json-server backend. Create and manage your own decks, then study them.",
+            tags: ["React", "JavaScript", "REST"],
         },
         {
             title: "Pomodoro Timer",
@@ -79,11 +84,80 @@ const userData = {
             description:
                 "Checkout reviews for movies near you. Built with React, Node.js, and PostgreSQL.",
         },
+        {
+            title: "Calculator",
+            link: "https://odin-calculator-flame.vercel.app/",
+            github: "https://github.com/khangbeo/odin-calculator",
+            imgUrl: "/images/calculator.png",
+            description:
+                "A simple calculator with basic features built with JavaScript, HTML, and CSS.",
+        },
+    ],
+    experience: [
+        {
+            company: "MX",
+            role: "Technical Support Engineer",
+            title: "Financial data platform support for banks and credit unions",
+            description:
+                "Troubleshooting authentication and OAuth/token errors, API failures and connection problems, and missing or delayed data, using log analysis (OpenSearch) and SQL. Subject matter expert for those areas, mentor to new hires, and author of internal documentation and case templates the team relies on.",
+        },
+        {
+            company: "Invoca",
+            role: "Technical Support",
+            title: "Call tracking SaaS support, 30+ complex cases a day",
+            description:
+                "Resolved 90%+ of cases within 3 business days with CSAT above 90%, and cut first response time from several days to under 24 hours. Reproduced webhook and integration errors to isolate root cause before escalating, and built a bulk upload template that was adopted team-wide.",
+        },
+        {
+            company: "Conduent",
+            role: "Customer Support",
+            title: "High-volume phone support and new-hire training",
+            description:
+                "Handled 32+ calls a day and cut average handle time from 43 to 14 minutes while training and mentoring new hires on workflow and team targets.",
+        },
+    ],
+    skills: [
+        {
+            group: "Troubleshooting",
+            items: [
+                "OAuth & authentication errors",
+                "API failures & integrations",
+                "Log analysis (OpenSearch)",
+                "SQL joins & data tracing",
+            ],
+        },
+        {
+            group: "Support Craft",
+            items: [
+                "Escalations & root cause write-ups",
+                "Knowledge base ownership",
+                "Mentoring & SME support",
+                "Zendesk · Jira · Salesforce (ticketing)",
+            ],
+        },
+        {
+            group: "Data Engineering",
+            items: [
+                "Python · SQL · Git · Bash",
+                "Spark & PySpark",
+                "Hadoop · Hive · Kafka",
+                "Revature data engineering program",
+            ],
+        },
+        {
+            group: "Web Development",
+            items: [
+                "JavaScript · HTML · CSS",
+                "React fundamentals",
+                "Currently studying: Python (MOOC.fi)",
+                "Godot game development",
+            ],
+        },
     ],
     about: {
-        title: "Support Engineer with a background in art and design",
+        title: "Technical Support Engineer who solves the cases other people get stuck on",
         description: [
-            `I started out painting imaginary worlds with brushes, but somewhere along the way, I realized I could do the same thing with code and tech. Now whether I’m debugging something, building a little project, or messing around with AI, I’m just having fun bringing ideas to life.`,
+            `5+ years of B2B SaaS support. At MX I support banks and credit unions on a financial data platform, specializing in authentication and OAuth issues, API failures, and missing or delayed data. I am also the person teammates come to for hard cases: subject matter expert, mentor, and documentation writer.`,
         ],
         currentProject: "Pixel Art Editor",
         currentProjectUrl: "https://pixelarteditor.vercel.app/",
@@ -91,7 +165,7 @@ const userData = {
     resumeUrl:
         "https://docs.google.com/document/d/189FuLpJx4mFrtf7g5QxUvCmSkSiinh5f0czGFmaNcHc/edit?usp=sharing",
     socialLinks: {
-        linkedin: "https://www.linkedin.com/in/anthony-duong1",
+        linkedin: "https://www.linkedin.com/in/Anthony-Duong1",
         github: "https://github.com/khangbeo",
         email: "khangbeo2012@gmail.com",
     },
