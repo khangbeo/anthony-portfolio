@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Socials from "../common/Socials";
 import ThemeToggle from "../ui/ThemeToggle";
+import userData from "@constants/data";
 export default function Header() {
     return (
         <div className="w-full backdrop-blur-sm">
@@ -11,7 +12,7 @@ export default function Header() {
                             Anthony Duong
                         </h1>
                         <p className="text-gray-600 dark:text-gray-300 mb-1 text-md">
-                            Support Engineer - Artist - Developer
+                            {userData.designation}
                         </p>
                         <Socials />
                     </div>
