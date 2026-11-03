@@ -13,6 +13,10 @@ module.exports = {
                 2000: "2000ms",
                 4000: "4000ms",
             },
+            backgroundImage: {
+                "gradient-to-r":
+                    "linear-gradient(to right, var(--tw-gradient-stops))",
+            },
         },
         dropShadow: {
             sm: "0px 1px 1px rgba(0, 0, 0, 0.05)",
