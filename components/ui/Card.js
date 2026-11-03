@@ -2,13 +2,13 @@ export default function Card({ ...projects }) {
     const { title, description, imgUrl, link, github, tags } = projects;
     const hasFooter = Boolean(link || github);
     return (
-        <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-white/10 dark:bg-[#18181b] dark:shadow-none dark:hover:border-white/20">
+        <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-blue-300 hover:shadow-xl dark:border-white/10 dark:bg-[#18181b] dark:shadow-none dark:hover:border-blue-400/40 dark:hover:shadow-2xl">
             {imgUrl && (
                 <div className="relative h-52 w-full shrink-0 overflow-hidden sm:h-56">
                     <img
                         src={imgUrl}
                         alt={title}
-                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
                     />
                 </div>
             )}
