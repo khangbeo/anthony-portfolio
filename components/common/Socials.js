@@ -8,7 +8,7 @@ export default function Socials() {
                 href={userData.socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full hover:bg-gray-900 hover:text-gray-50 text-gray-900 dark:text-gray-50 dark:hover:bg-gray-50 dark:hover:text-gray-900 flex items-center justify-center cursor-pointer"
+                className="h-10 w-10 rounded-full ring-1 ring-gray-200 dark:ring-white/10 hover:bg-gray-900 hover:text-white text-gray-700 dark:text-gray-300 dark:hover:bg-white/10 dark:hover:text-white flex items-center justify-center cursor-pointer transition-colors duration-200"
             >
                 <FiGithub />
             </a>
@@ -16,14 +16,14 @@ export default function Socials() {
                 href={userData.socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full hover:bg-gray-900 hover:text-gray-50 text-gray-900 dark:text-gray-50 dark:hover:bg-gray-50 dark:hover:text-gray-900 flex items-center justify-center cursor-pointer"
+                className="h-10 w-10 rounded-full ring-1 ring-gray-200 dark:ring-white/10 hover:bg-gray-900 hover:text-white text-gray-700 dark:text-gray-300 dark:hover:bg-white/10 dark:hover:text-white flex items-center justify-center cursor-pointer transition-colors duration-200"
             >
                 <FiLinkedin />
             </a>
             <a
                 href={`mailto:${userData.email}`}
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full hover:bg-gray-900 hover:text-gray-50 text-gray-900 dark:text-gray-50 dark:hover:bg-gray-50 dark:hover:text-gray-900 flex items-center justify-center cursor-pointer"
+                className="h-10 w-10 rounded-full ring-1 ring-gray-200 dark:ring-white/10 hover:bg-gray-900 hover:text-white text-gray-700 dark:text-gray-300 dark:hover:bg-white/10 dark:hover:text-white flex items-center justify-center cursor-pointer transition-colors duration-200"
             >
                 <FiMail />
             </a>

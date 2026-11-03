@@ -8,10 +8,10 @@ export default function Header() {
             <div className="container mx-auto">
                 <div className="flex flex-col py-8">
                     <div>
-                        <h1 className="text-3xl font-bold mb-2">
+                        <h1 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
                             Anthony Duong
                         </h1>
-                        <p className="text-gray-600 dark:text-gray-300 mb-1 text-md">
+                        <p className="text-gray-600 dark:text-gray-400 mb-1 text-md">
                             {userData.designation}
                         </p>
                         <Socials />
@@ -19,7 +19,7 @@ export default function Header() {
 
                     <ThemeToggle />
 
-                    <hr className="my-4 border-gray-300 dark:border-gray-800 w-full border-solid border-[1px]" />
+                    <hr className="my-4 border-gray-200 dark:border-white/10 w-full border-solid border-[1px]" />
                     <Navbar />
                 </div>
             </div>

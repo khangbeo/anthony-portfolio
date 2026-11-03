@@ -2,20 +2,14 @@ import Socials from "../common/Socials";
 
 export default function Footer() {
     return (
-        <div
-            className="
-      mt-20 max-w-6xl mx-auto px-4 py-10 md:py-10 
-      "
-        >
-            <div className="flex flex-col space-y-4 md:space-y-0 items-center mt-8">
+        <footer className="mt-24 border-t border-gray-200 dark:border-white/10">
+            <div className="mx-auto flex max-w-4xl flex-col items-center px-4 py-10">
                 <Socials />
-                <div className="m-8 text-center">
-                    <p>
-                        &copy; {new Date().getFullYear()} Anthony Duong.
-                        Bakersfield, California.
-                    </p>
-                </div>
+                <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
+                    &copy; {new Date().getFullYear()} Anthony Duong.
+                    Bakersfield, California.
+                </p>
             </div>
-        </div>
+        </footer>
     );
 }

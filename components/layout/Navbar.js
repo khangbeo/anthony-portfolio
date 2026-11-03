@@ -20,8 +20,8 @@ export default function Navbar() {
                     href={item.href}
                     className={`p-2 rounded-md lg:text-xl transition-colors ${
                         router.pathname === item.href
-                            ? "bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900"
-                            : "text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                            ? "bg-gray-900 font-medium text-white dark:bg-white/10 dark:text-white"
+                            : "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                     }`}
                 >
                     {item.name}

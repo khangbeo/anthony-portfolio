@@ -6,7 +6,7 @@ config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }) {
     return (
-        <ThemeProvider defaultTheme="light" attribute="class">
+        <ThemeProvider defaultTheme="dark" attribute="class">
             <Component {...pageProps} />
         </ThemeProvider>
     );

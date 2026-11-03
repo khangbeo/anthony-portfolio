@@ -59,7 +59,7 @@ export default function ContainerBlock({ children, customMeta }) {
                 />
                 <link rel="canonical" href="https://anthonyduong.vercel.com" />
             </Head>
-            <div className="min-h-screen flex flex-col">
+            <div className="flex min-h-screen flex-col bg-gray-50 text-gray-900 dark:bg-[#09090b] dark:text-gray-100">
                 <Header />
                 <main className="flex-grow container mx-auto px-4 py-8">
                     {children}
