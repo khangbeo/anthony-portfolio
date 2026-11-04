@@ -13,12 +13,6 @@ const userData = {
     },
     projects: [
         {
-            title: "Petal & Polish — Booking Site",
-            description:
-                "A sample booking site for a nail salon: service menu, appointment booking flow, and a clean small-business layout. Built as a portfolio piece for freelance web work.",
-            tags: ["HTML", "CSS", "JavaScript"],
-        },
-        {
             title: "Pixel Art Editor",
             link: "https://pixelarteditor.vercel.app",
             github: "https://github.com/khangbeo/pixel-art-editor",

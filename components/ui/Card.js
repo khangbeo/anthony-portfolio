@@ -1,62 +1,65 @@
 export default function Card({ ...projects }) {
     const { title, description, imgUrl, link, github, tags } = projects;
+    const hasFooter = Boolean(link || github);
     return (
-        <div className="group transform transition-all duration-200 hover:-translate-y-2">
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg transition-shadow duration-200 hover:shadow-xl">
-                {imgUrl && (
-                    <div className="aspect-square relative w-full h-80 lg:h-[200px] overflow-hidden">
-                        <img
-                            src={imgUrl}
-                            alt={title}
-                            className="absolute inset-0 w-full h-full object-cover rounded-t-lg"
-                        />
-                    </div>
-                )}
-                <div className="flex flex-col justify-between p-4 lg:h-[220px] bg-gray-100 rounded-b-lg">
-                    <div className="text-gray-900">
-                        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-                        <p className="mb-2">{description}</p>
-                        {tags && (
-                            <div className="flex flex-wrap gap-2 mt-3">
-                                {tags.map((tag, idx) => (
-                                    <span
-                                        key={idx}
-                                        className="text-xs font-semibold text-blue-700 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 px-2.5 py-1 rounded-full"
-                                    >
-                                        {tag}
-                                    </span>
-                                ))}
-                            </div>
-                        )}
-                    </div>
-                    {(link || github) && (
-                        <div className="flex space-x-2">
-                            {link && (
-                                <a
-                                    href={link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-blue-700 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-200"
+        <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-blue-300 hover:shadow-xl dark:border-white/10 dark:bg-[#18181b] dark:shadow-none dark:hover:border-blue-400/40 dark:hover:shadow-2xl">
+            {imgUrl && (
+                <div className="relative h-52 w-full shrink-0 overflow-hidden sm:h-56">
+                    <img
+                        src={imgUrl}
+                        alt={title}
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+                    />
+                </div>
+            )}
+            <div className="flex flex-1 flex-col p-6">
+                <div className={hasFooter ? "pb-6" : ""}>
+                    <h3 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                        {title}
+                    </h3>
+                    <p className="mt-2 text-[15px] leading-relaxed text-gray-600 dark:text-gray-400">
+                        {description}
+                    </p>
+                    {tags && tags.length > 0 && (
+                        <div className="mt-4 flex flex-wrap gap-2">
+                            {tags.map((tag, idx) => (
+                                <span
+                                    key={idx}
+                                    className="rounded-full bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-700 ring-1 ring-inset ring-blue-600/20 dark:bg-blue-400/10 dark:text-blue-300 dark:ring-blue-400/20"
                                 >
-                                    Demo
-                                    <span className="inline-block ml-1">↗</span>
-                                </a>
-                            )}
-                            {github && (
-                                <a
-                                    href={github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-gray-600 dark:text-gray-600 hover:text-gray-900 dark:hover:text-gray-400 transition-colors duration-200"
-                                >
-                                    Code
-                                    <span className="inline-block ml-1">↗</span>
-                                </a>
-                            )}
+                                    {tag}
+                                </span>
+                            ))}
                         </div>
                     )}
                 </div>
+                {hasFooter && (
+                    <div className="mt-auto flex items-center gap-5 border-t border-gray-100 pt-5 dark:border-white/5">
+                        {link && (
+                            <a
+                                href={link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-sm font-semibold text-blue-600 transition-colors duration-200 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300"
+                            >
+                                Demo
+                                <span className="ml-1 inline-block">↗</span>
+                            </a>
+                        )}
+                        {github && (
+                            <a
+                                href={github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-sm font-semibold text-gray-600 transition-colors duration-200 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-300"
+                            >
+                                Code
+                                <span className="ml-1 inline-block">↗</span>
+                            </a>
+                        )}
+                    </div>
+                )}
             </div>
-        </div>
+        </article>
     );
 }

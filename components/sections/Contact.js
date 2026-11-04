@@ -3,14 +3,11 @@ import Form from "../ui/Form";
 export default function Contact() {
     return (
         <section>
-            <div className="max-w-6xl mx-auto h-20">
-                <h1 className="font-title text-4xl font-bold text-center">
+            <div className="mx-auto max-w-4xl px-4">
+                <h1 className="text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                     Let's chat
                 </h1>
-            </div>
-            <div className="relative z-10 p-2 md:p-8 max-w-6xl mx-auto">
-                <hr />
-                <p className="font-light text-center text-xl">
+                <p className="mx-auto mt-4 max-w-2xl text-center text-lg leading-relaxed text-gray-600 dark:text-gray-400">
                     Message me and I'll get back to you as soon as I can.
                 </p>
                 <Form />
