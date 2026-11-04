@@ -57,7 +57,7 @@
     .dark\:text-gray-400,
     .dark\:text-gray-500,
     .dark\:text-gray-600 {
-        transition: color 0.2s ease-in-out !important;
+        transition: color 0.2s ease-in-out;
     }
 
     /* Background transitions */
@@ -76,7 +76,7 @@
     .dark\:bg-gray-900,
     .dark\:bg-gray-800,
     .dark\:bg-gray-700 {
-        transition: background-color 0.2s ease-in-out !important;
+        transition: background-color 0.2s ease-in-out;
     }
 
     /* Border transitions */
@@ -90,7 +90,7 @@
     .border-gray-900,
     .dark\:border-gray-800,
     .dark\:border-gray-700 {
-        transition: border-color 0.2s ease-in-out !important;
+        transition: border-color 0.2s ease-in-out;
     }
 
     /* Theme toggle button specific transition */
